@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="rtl" >
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,9 +23,10 @@
     />
     <title>المشعل للسفر والسياحة</title>
   </head>
-  <body>
+  <div id="printd">
+  <body >
 
-    <div class="container-fluid wrapper">
+    <div class="container-fluid wrapper" >
       <div class="website-image">
         <img src="{{asset('front/images//logo.png')}}" alt="Logo" />
       </div>
@@ -191,6 +192,28 @@
         <img src="{{asset('front/images//segnature.png')}}" alt="Signature" />
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+ 
+
+    <script src="{{asset('front/js/html2pdf.bundle.min.js')}}"></script>
+    
+    <script>
+        $(document).ready(function () {
+            // generatePDF();
+            window.print()
+        });
+        function generatePDF() {
+            // Choose the element that our invoice is rendered in.
+            const element = document.getElementById('printd');
+            // Choose the element and save the PDF for our user.
+            const x = html2pdf().from(element).save();
+              
+        }
+    </script>
   </body>
+</div>
+
 </html>

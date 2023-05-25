@@ -124,6 +124,10 @@ class BookingController extends Controller
      * @param  \App\Models\Booking  $booking
      * @return \Illuminate\Http\Response
      */
+    public function pdf($booking){
+        $booking=Booking::where('code',$booking)->first();
+        return view('frontend.pdf')->with('booking',$booking);
+    }
     public function edit(Booking $booking)
     {
         //

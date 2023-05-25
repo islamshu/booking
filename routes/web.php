@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\HomeController;
+use App\Models\Booking;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,5 +30,6 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
 });
 
 // Auth::routes();
+Route::get('dawnalod/{code}',[BookingController::class,'pdf'])->name('pdf');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
