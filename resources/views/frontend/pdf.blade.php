@@ -182,6 +182,12 @@
           <div class="tax-box red-box">
                         <h2>{{ $booking->price }} ريال سعودي</h2>
           </div>
+          <div class="other-social">
+            <span>ALMESHAL_TOUR</span>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+          </div>
         
         </div>
         <img src="{{asset('front/images//segnature.png')}}" alt="Signature" />
