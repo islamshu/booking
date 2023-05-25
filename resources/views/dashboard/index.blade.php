@@ -61,7 +61,7 @@
                                                       </td>
                                                     <td>
                                                         <a href="{{ route('booking.show',$item->code) }}" target="_blank" class="btn btn-info"><i class="fa fa-eye"></i></a>
-                                                        <a href="{{ route('pdf',$item->code) }}" target="_blank" class="btn btn-info"><i class="fa fa-eye"></i></a>
+                                                        <a href="{{ route('pdf',$item->code) }}" target="_blank" class="btn btn-info">PDF</a>
 
                                                         <form style="display: inline"
                                                         action="{{ route('booking.destroy', $item->id) }}"
