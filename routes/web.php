@@ -18,11 +18,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['prefix' => 'dashboard'], function () {
+Route::get('login',[HomeController::class,'login_admin'])->name('login');
+Route::post('login',[HomeController::class,'post_login_admin'])->name('post_login_admin');
+Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
     Route::get('/',[HomeController::class,'dashbaord'])->name('dashboard');
     Route::resource('/booking',BookingController::class);
+    Route::get('logout',[HomeController::class,'logout'])->name('logout');
+    Route::get('profile',[HomeController::class,'profile'])->name('profile');
+    Route::post('update_profile',[HomeController::class,'update_profile'])->name('update_profile');
 });
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

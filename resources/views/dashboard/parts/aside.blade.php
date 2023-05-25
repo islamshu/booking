@@ -4,9 +4,9 @@
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 
             <li class="nav-item  ">
-                <a href="">
+                <a href="{{ route('booking.index') }}">
                     <i class="fa fa-list"></i>
-                    <span class="menu-title"> مجالات المستخدمين </span></a>
+                    <span class="menu-title"> الحجوزات  </span></a>
             </li>
 
 
