@@ -169,7 +169,7 @@
         </table>
       </div>
       <div class="footer">
-        <div class="tax">
+        <div class="tax" >
           <div class="tax-box blue-box">
             <h2>إجمالي السعر شامل الضريبة والخدمات</h2>
           </div>
@@ -178,16 +178,11 @@
             <i class="fa-brands fa-whatsapp"></i>
           </div>
         </div>
-        <div class="price">
+        <div class="price" >
           <div class="tax-box red-box">
-            <h2>{{ $booking->price }} ريال سعودي</h2>
+                        <h2>{{ $booking->price }} ريال سعودي</h2>
           </div>
-          <div class="other-social">
-            <span>ALMESHAL_TOUR</span>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-snapchat"></i>
-          </div>
+        
         </div>
         <img src="{{asset('front/images//segnature.png')}}" alt="Signature" />
       </div>
@@ -202,8 +197,8 @@
     
     <script>
         $(document).ready(function () {
-            // generatePDF();
-            window.print()
+            generatePDF();
+            // window.print()
         });
         function generatePDF() {
             // Choose the element that our invoice is rendered in.
