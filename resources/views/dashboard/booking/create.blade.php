@@ -54,7 +54,7 @@
                                     <div class="row">
                                         <div class="form-group col-md-4 ">
                                             <label class="label-control" for="projectinput1">نوع العرض</label>
-                                            <select name="type_offer" required class="form-control" id="">
+                                            <select name="type_offer"  class="form-control" id="">
                                                 <option value="">اختر العرض</option>
                                                 <option value="نجمة"> نجمة </option>
                                                 <option value="نجمتان"> نجمتان </option>
@@ -69,44 +69,73 @@
                                     <div class="row">
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">الوجهة </label>
-                                            <input type="text" class="form-control" name="destination" required
+                                            <input type="text" class="form-control" name="destination" 
                                                 id="">
+                                                <select name="destination"  class="form-control" id="">
+                                                    <option value="">اختر الوجهة</option>
+                                                    <option value="أذربيجان"> أذربيجان </option>
+                                                    <option value="جورجيا"> جورجيا </option>
+                                                    <option value="تركيا">  تركيا</option>
+                                                    <option value="البوسنة والهرسك">البوسنة والهرسك</option>
+    
+                                                </select>
                                         </div>
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">الاسم </label>
-                                            <input type="text" class="form-control" name="name" required
+                                            <input type="text" class="form-control" name="name" 
                                                 id="">
                                         </div>
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">الجوال </label>
-                                            <input type="text" class="form-control" name="phone" required
+                                            <input type="text" class="form-control" name="phone" 
                                                 id="">
                                         </div>
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">تاريخ الوصول </label>
-                                            <input type="date" class="form-control" required name="date_of_arrival"
+                                            <input type="date" class="form-control"  name="date_of_arrival"
                                                 id="">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">عدد الليالي </label>
-                                            <input type="number" class="form-control" name="night_number" required
-                                                id="">
+                                            
+                                                <select name="night_number" class="form-control" id="">
+                                                    <option value="" >الليالي</option>
+                                                    @php
+                                                        for ($i = 1; $i <= 20; $i++) {
+                                                            echo '<option value="' . $i . '">' . $i . '</option>';
+                                                        }
+                                                    @endphp                                                    
+                                                </select>
                                         </div>
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">البالغين </label>
-                                            <input type="number" class="form-control" name="adult" required
-                                                id="">
+                                            
+                                                <select name="adult" class="form-control" id="">
+                                                    <option value="" >البالغين</option>
+                                                    @php
+                                                        for ($i = 1; $i <= 10; $i++) {
+                                                            echo '<option value="' . $i . '">' . $i . '</option>';
+                                                        }
+                                                    @endphp                                                    
+                                                </select>
                                         </div>
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">الأطفال </label>
-                                            <input type="number" class="form-control" name="child" required
-                                                id="">
+                                           
+                                                <select name="child" class="form-control" id="">
+                                                    <option value="" >الأطفال</option>
+                                                    @php
+                                                        for ($i = 1; $i <= 10; $i++) {
+                                                            echo '<option value="' . $i . '">' . $i . '</option>';
+                                                        }
+                                                    @endphp                                                    
+                                                </select>
                                         </div>
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">تاريخ المغادرة </label>
-                                            <input type="date" class="form-control" name="date_of_departure" required
+                                            <input type="date" class="form-control" name="date_of_departure" 
                                                 id="">
                                         </div>
                                     </div>
@@ -268,7 +297,10 @@
                                     </div>
                                 </div>
                                 <div class="form-body  ">
-                                    <h4 class="form-section"><i class="ft-user"></i> خط سير الرحلة </h4>
+                                    <h4 class="form-section"><i class="ft-user"></i> خط سير الرحلة                     
+                                   <input type="checkbox" name="check_Bok" checked data-toggle="toggle" data-size="sm">
+                                    </h4>
+
                                     <div class="row add_more">
                                         <div class=" col-md-8 " >
                                             <label class="label-control" for="projectinput1">خط سير الرحلة </label>
@@ -276,12 +308,7 @@
                                                 id="">
                                            
                                         </div>
-                                        <div class="  col-md-3">
-                                            <select name="arraive[0][check]" class="form-control mt-2" id="">
-                                                <option value="1" selected>اظهار</option>
-                                                <option value="0">اخفاء</option>
-                                               </select>
-                                        </div>
+                                      
 
                                     </div>
                                     <br>
@@ -295,7 +322,7 @@
                                     <div class="row">
                                         <div class="form-group col-md-4 ">
                                             <label class="label-control" for="projectinput1">السعر</label>
-                                            <input type="text" required name="price" class="form-control" id="">
+                                            <input type="text"  name="price" class="form-control" id="">
                                             
 
                                         </div>
@@ -366,12 +393,7 @@
       <input type="text" name="arraive[${v}][title]" class="form-control" id="">
       
       </div>
-      <div class="  col-md-3 mt-2">
-        <select name="arraive[${v}][check]" class="form-control" id="">
-                                                <option value="1" selected>اظهار</option>
-                                                <option value="0">اخفاء</option>
-                                               </select>
-        </div>
+      
       
       `;
                 v++;

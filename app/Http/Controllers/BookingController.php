@@ -51,6 +51,11 @@ class BookingController extends Controller
         $booking->child = $request->child;
         $booking->date_of_departure = $request->date_of_departure;
         $booking->price = $request->price;
+        if($request->check_Bok){
+            $booking->show_arraive = 1;
+        }else{
+            $booking->show_arraive = 0;
+        }
         $booking->code = date('Ymd-His').rand(10,99);
         $booking->save();
         if(isset($request->hotel)){

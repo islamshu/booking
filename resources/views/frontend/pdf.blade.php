@@ -171,7 +171,7 @@
       <div class="footer">
         <div class="tax" >
           <div class="tax-box blue-box">
-            <h2>إجمالي السعر شامل الضريبة والخدمات</h2>
+            <h2 style="font-size: 16px">إجمالي السعر شامل الضريبة والخدمات</h2>
           </div>
           <div class="whatsapp">
             <span>966532223023+</span>
@@ -180,7 +180,7 @@
         </div>
         <div class="price" >
           <div class="tax-box red-box">
-                        <h2>{{ $booking->price }} ريال سعودي</h2>
+                <h2 style="font-size: 16px">{{ $booking->price }} ريال سعودي</h2>
           </div>
           <div class="other-social">
             <span>ALMESHAL_TOUR</span>
