@@ -200,42 +200,42 @@
                                         <h4 class="form-section"><i class="ft-user"></i> البرنامج يشمل </h4>
                                         <div class="row">
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[0][title]"
+                                                <input type="text" class="form-control" value="استقبال وتوديع من المطار" name="detiles[0][title]"
                                                     id="">
 
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[1][title]"
+                                                <input type="text" class="form-control" value="سكن + افطار" name="detiles[1][title]"
                                                     id="">
 
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[2][title]"
+                                                <input type="text" class="form-control" value="خدمة عملاء بالعربي" name="detiles[2][title]"
                                                     id="">
 
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[3][title]"
+                                                <input type="text" class="form-control" value="شريحة اتصال وانترنت" name="detiles[3][title]"
                                                     id="">
 
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[4][title]"
+                                                <input type="text" class="form-control" value="المواصلات بسيارات خاصة" name="detiles[4][title]"
                                                     id="">
 
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[5][title]"
+                                                <input type="text" class="form-control"  name="detiles[5][title]"
                                                     id="">
 
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[6][title]"
+                                                <input type="text" class="form-control"  name="detiles[6][title]"
                                                     id="">
 
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="detiles[7][title]"
+                                                <input type="text" class="form-control"  name="detiles[7][title]"
                                                     id="">
 
                                             </div>

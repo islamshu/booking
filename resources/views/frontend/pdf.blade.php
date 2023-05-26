@@ -138,6 +138,7 @@
                     </div>
                 </div>
             </div>
+            @if($booking->show_arraive == 1)
             <div class="table-name">
                 <h2 class="table-title">خط سير الرحلة</h2>
             </div>
@@ -158,10 +159,11 @@
                                 </td>
                             </tr>
                         @endforeach
-
+    
                     </tbody>
                 </table>
             </div>
+            @endif
             <div class="footer">
                 <div class="tax">
                     <div class="tax-box blue-box">
