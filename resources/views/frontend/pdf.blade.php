@@ -205,7 +205,7 @@
 
         <script>
             $(document).ready(function() {
-                // generatePDF();
+                generatePDF();
                 // window.print()
             });
 
