@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="{{asset('front/images//icon.png')}}" />
-    <link rel="stylesheet" href="{{asset('front/css/bootstrap.rtl.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('front/css/main.css')}}" />
-    <link rel="stylesheet" href="{{asset('front/css/media.css')}}" />
+    <link rel="stylesheet" href="{{asset('front/css/bootstrap.rtl.min.css?version=' . config('app.app_version')) }})}}" />
+    <link rel="stylesheet" href="{{asset('front/css/main.css?version=' . config('app.app_version')) }})}}" />
+    <link rel="stylesheet" href="{{asset('front/css/media.css?version=' . config('app.app_version')) }})}}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -193,13 +193,23 @@
         <img src="{{asset('front/images//segnature.png')}}" alt="Signature" />
       </div>
     </div>
+    <style>
+
+      @media print {
+        @page {
+          size: A2;
+        }
+      }
+      
+      </style>
+      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('front/js/bootstrap.min.js?version=' . config('app.app_version')) }})}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
  
 
-    <script src="{{asset('front/js/html2pdf.bundle.min.js')}}"></script>
+    <script src="{{asset('front/js/html2pdf.bundle.min.js?version=' . config('app.app_version')) }})}}"></script>
     
     <script>
         $(document).ready(function () {

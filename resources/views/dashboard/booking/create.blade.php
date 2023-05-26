@@ -69,8 +69,7 @@
                                     <div class="row">
                                         <div class="form-group col-md-3 ">
                                             <label class="label-control" for="projectinput1">الوجهة </label>
-                                            <input type="text" class="form-control" name="destination" 
-                                                id="">
+                                            
                                                 <select name="destination"  class="form-control" id="">
                                                     <option value="">اختر الوجهة</option>
                                                     <option value="أذربيجان"> أذربيجان </option>
